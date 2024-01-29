@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Forms Tutorial</title>
+    <link rel="stylesheet" href="./assets/css/forms.css" type="text/css">
+</head>
+<body>
+    <form action="forms.html" method="GET">
+        <section>
+            <ul>
+                <li>
+                    <label for="user-name-input">Your name</label>
+                    <input type="text" name="user-name" id="user-name-input" placeholder="Your name here" required />
+                </li>
+                <li>
+                    <label for="user-email-input">Your email</label>
+                    <input type="email" name="user-email" id="user-email-input" placeholder="user@domain.com" />
+                </li>
+                <li>
+                    <label for="user-password-input">Your password</label>
+                    <input type="password" name="user-password" id="user-password-input" placeholder="Your password" minlength="8" required />
+                </li>
+            </ul>
+        </section>
+        
+        
+        <hr />
+
+        <section>
+            <label for="color">Your favorite color</label>
+            <select name="favorite-color" id="color">
+                <option value="red">Red</option>
+                <option value="purple">Purple</option>
+                <option value="blue">Blue</option>
+            </select>
+        </section>
+        
+        <section>
+            <h2>How should we verify your account?</h2>
+
+            <div class="radio">
+                <input type="radio" name="verify" id="user-email" value="user-email" />
+                <label for="user-email">Via email</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="verify" id="user-phone" value="phone" />
+                <label for="user-phone">Via phone</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="verify" id="user-sms" value="sms" />
+                <label for="user-sms">Via SMS</label>
+            </div>
+        </section>
+        
+        <section>
+            <button type="reset">Clear</button>
+            <button>Submit</button>
+        </section>
+    </form>
+</body>
+</html>
