@@ -1,0 +1,94 @@
+:root {
+    --color-text: #1f1f1f;
+    --background-color: #eae2f7;
+    --main-color: #8244e6;
+    --hover-color: rgb(105, 51, 192);
+    --hover-color-alt: #dcccf7;
+    --card-color: #fdfaff;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--color-text);
+    background-color: var(--background-color);
+}
+
+#main-header {
+    background-color: var(--main-color);
+    color: white;
+    padding: 2.5rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.btn-base {
+    font: inherit;
+    padding: 0.5rem 1.75rem;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-alternative {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.btn-base:hover {
+    background-color: var(--hover-color);
+    transition: 0.25s ease-in-out;
+}
+
+.btn-alternative:hover {
+    background-color: var(--hover-color-alt);
+}
+
+#configuration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#configuration-players {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#configuration-players li {
+    padding: 5vh 2vw;
+}
+
+.player-desc {
+    padding: 2rem 1rem;
+    background-color: var(--card-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1125);
+
+    height: 8rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-desc h2 {
+    font-size: 1rem;
+}
+
+.player-desc h3 {
+    font-size: 1.75rem;
+    color: var(--main-color);
+}

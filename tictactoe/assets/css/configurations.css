@@ -1,0 +1,47 @@
+:root {
+    --color-text: #1f1f1f;
+    --main-color: #8244e6;
+}
+
+#config-overlay {
+    text-align: center;
+}
+
+#config-overlay h2 {
+    margin-block: 0.5rem;
+}
+
+.form-control {
+    margin-block: 0.5rem;
+}
+
+.form-control label {
+    display: block;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input {
+    font: inherit;
+    color: var(--color-text);
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    width: 17.5rem;
+    padding: 0.3rem;
+    
+    margin-bottom: 1rem;
+}
+
+#config-errors {
+    margin: 1rem;
+}
+
+.error label {
+    color: red;
+}
+
+.error input {
+    background-color: #fbcbcb;
+    color: red;
+    border-color: red;
+}
